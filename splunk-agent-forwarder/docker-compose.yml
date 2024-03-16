@@ -1,0 +1,10 @@
+version: "3.6"
+services:
+  agent:
+    ports: 
+      - "9997:9997"
+    image: "splunk/universalforwarder:latest"  
+    environment:
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=ChangeMe1!
+    
