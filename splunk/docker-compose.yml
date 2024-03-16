@@ -1,0 +1,10 @@
+version: "3.6"
+services:
+  splunk:
+    ports:
+      - "8000:8000"
+      - "9997:9997"
+    image: "splunk/splunk:latest"  
+    environment: 
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=ChangeMe1Time!
